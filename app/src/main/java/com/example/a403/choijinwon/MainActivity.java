@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 if(c1.isChecked() == true) result += c1.getText().toString();
                 if(c2.isChecked() == true) result += c2.getText().toString();
                 if(c3.isChecked() == true) result += c3.getText().toString();
-                label.setText("선택과목은 : " + result + ", ");
+                label.setText("선택과목은 : " + result + "<br>");
             }
         });
 
