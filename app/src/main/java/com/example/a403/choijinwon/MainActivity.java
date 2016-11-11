@@ -66,12 +66,22 @@ public class MainActivity extends AppCompatActivity {
         label2 = (TextView)findViewById(R.id.label2);
         r1 = (RadioButton)findViewById(R.id.radioButton);
         r2 = (RadioButton)findViewById(R.id.radioButton2);
+        rg = (RadioGroup)findViewById(R.id.radioGroup);
 
         b4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+                String result2 = " ";
+                if(r1.isChecked() == true) {
+                    result2 += r1.getText().toString();
+                    Toast.makeText(getApplicationContext(), "멋진 남자를 선택하셨군요", Toast.LENGTH_LONG).show();
+                }
+                else {
+                    result2 += r2.getText().toString();
+                    Toast.makeText(getApplicationContext(), "예쁜 여자를 선택하셨군요", Toast.LENGTH_LONG).show();
+                }
+                label2.setText("성별은 " + result2 + "입니다.");
 
 
-                Toast.makeText(getApplicationContext(), "안녕하", Toast.LENGTH_SHORT).show();
             }
         });
 
