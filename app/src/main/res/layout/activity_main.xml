@@ -60,7 +60,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
+        android:id="@+id/radioGroup">
 
         <RadioButton
             android:checked="true"
@@ -79,13 +79,13 @@
     </RadioGroup>
 
     <Button
-        android:text="Button"
+        android:text="Gender Select"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button4" />
 
     <TextView
-        android:text="TextView"
+        android:text="성별을 선택해주세요"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/label2" />
